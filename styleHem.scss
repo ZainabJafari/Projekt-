@@ -1,0 +1,282 @@
+@import "partials/variables";
+@import "partials/mixins";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+@mixin produkt-sidan-style($background) {
+
+  background: $background;
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+
+
+  .tillvalH1 {
+      text-align: center;
+      font-size: 80px;
+      padding: 30px;
+      color: $footerColor;
+      text-shadow: 1px 1px 2px $thirdColor;
+      padding-top: 250px;
+      @include font()
+      
+
+  }
+
+
+
+}
+
+.navbar1 {
+  width: 100%;
+  height: 115vh;
+  background-image: linear-gradient(rgba(12, 3, 51, 0.3), rgba(12, 3, 51, 0.3));
+  position: relative;
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 15px 8%;
+  display: flex;
+  justify-content: space-between;
+  background-color: $footerColor;
+  opacity: 0.8;
+
+  .logo {
+    width: 80px;
+
+  }
+
+  .navbarLI {
+    list-style: none;
+    display: inline-block;
+    margin-left: 100px;
+  }
+
+  .navbarA {
+    text-decoration: none;
+    color: $forthColor;
+    font-size: 16px;
+  }
+}
+
+.content {
+  text-align: center;
+
+  .title {
+    font-size: 80px;
+    color: $forthColor;
+    font-weight: 600;
+    padding: 16px;
+    background-color: $footerColor;
+    opacity: 0.9;
+    border-radius: 20px;
+  }
+
+  .contentA {
+    text-decoration: none;
+    display: inline-block;
+    color: whitesmoke;
+    font-size: 24px;
+
+  }
+}
+
+@media (max-width: 500px) {
+  .title {
+    background-color: #2ecc71;
+  }
+
+  .contentA {
+    color: gold;
+  }
+}
+
+
+.background-video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+
+}
+
+
+
+.logo {
+  height: 70px;
+  width: 80px;
+  border-radius: 100%;
+
+}
+
+
+
+
+.row {
+  padding-top: 80px;
+  background-color: rgb(244, 237, 237);
+}
+
+
+
+.main-del2 {
+  margin-top: 80px;
+
+  .featurette-heading {
+    margin-top: 60px;
+    padding-left: 50px;
+  }
+
+  .lead {
+    margin-top: 30px;
+    padding-left: 50px;
+    font-size: 16px;
+  }
+
+  .bild1 {
+    width: 360px;
+    height: 400px;
+  }
+
+  .bild2 {
+    width: 450px;
+    height: 400px;
+  }
+}
+
+
+
+
+
+
+
+/* Tillval massage */
+.massage {
+  @include produkt-sidan-style(url(bilder/massageBild.webp));
+}
+
+.privatSpa {
+  @include produkt-sidan-style(url(bilder/partnerpool.jpeg));
+}
+
+
+.produkt {
+  @include produkt-sidan-style(url(bilder/bildprodukt.webp));
+}
+
+
+.utepool {
+  @include produkt-sidan-style(url(bilder/utepool1.jpeg));
+}
+
+.main-tillval {
+  background: linear-gradient(white, $thirdColor);
+}
+
+.Information {
+  padding: 120px;
+  font-size: 20px;
+
+  .InformationH2 {
+    text-align: center;
+  }
+}
+
+
+
+.prisLista {
+  text-align: center;
+  font-size: large;
+
+  .prisListaUl {
+    list-style: none;
+  }
+
+}
+
+
+.boka {
+  border: 1px solid rgb(212, 242, 246);
+  background-color: $mainColor;
+  padding: 20 20px;
+  width: 130px;
+  height: 50px;
+  border-radius: 20px;
+
+
+}
+
+
+
+
+.produktGroup {
+  margin-top: auto;
+
+  .produktBild {
+    width: 405px;
+    height: 400px;
+  }
+
+
+  .produktSpan {
+    font-size: 16px;
+    margin-left: 170px;
+    padding: 3px;
+    background-color: $thirdColor;
+  }
+}
+
+
+
+.omdömeH2 {
+  text-align: center;
+  padding-top: 80px;
+}
+
+.omdömeImg {
+  width: 100px;
+  height: 100px;
+}
+
+.omdömeSpan {
+  font-size: 30px;
+}
+
+
+
+.kund-recension {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+
+  .recension {
+    padding: 20px;
+    border: 1px solid gainsboro;
+    margin: 20px;
+    background-color: rgb(245, 248, 250);
+  }
+
+  img {
+    width: 110px;
+  }
+
+}
+
+
+
+
+
+
